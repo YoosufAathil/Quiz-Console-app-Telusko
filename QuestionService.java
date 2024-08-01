@@ -23,6 +23,7 @@ public class QuestionService {
             System.out.println("4. " + q.getOpt4());
             Scanner sc = new Scanner(System.in);
             selection[i] = sc.nextLine();
+            sc.close();
             i++;
 
         }
