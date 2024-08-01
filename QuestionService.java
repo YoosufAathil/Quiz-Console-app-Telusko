@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/**
+ * The QuestionService class represents a service that manages a quiz game.
+ * It contains an array of questions and an array to store user selections.
+ * The class provides methods to play the quiz, record user selections, and
+ * print the score.
+ */
 public class QuestionService {
     Question[] questions = new Question[5];
     String[] selection = new String[5];
@@ -23,7 +29,6 @@ public class QuestionService {
             System.out.println("4. " + q.getOpt4());
             Scanner sc = new Scanner(System.in);
             selection[i] = sc.nextLine();
-            sc.close();
             i++;
 
         }
